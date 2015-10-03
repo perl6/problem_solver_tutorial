@@ -8,7 +8,7 @@ my @note;
 say 'Press h and <Enter> for help, just <Enter> to exit.';
 loop {
     for @note.kv -> $nr, $line {
-        say $nr+1, ' : ', $line;
+        say $nr, ' : ', $line;
     }
 
     my $answer = prompt 'Write a new note? ';
@@ -21,7 +21,7 @@ loop {
         when ' ' { push @note, $new_note }
         when 'a' { push @note, $new_note }
         when 'p' { unshift @note, $new_note }
-        when 'r' { splice @note, +$new_note, 1 if -1 < +$new_note < +@note }
+        when 'r' { splice @note, +$new_note, 1 if 0 <= +$new_note < +@note }
         when 'd' { @note = (); }
         default  { say 'first letter: [ ] or [a]ppend (msg), [p]repend (msg),' ~
                         "m, [r]emove (nr), [d]elete <All>"

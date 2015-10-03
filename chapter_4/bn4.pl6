@@ -1,13 +1,11 @@
 use v6;
 
-my $file = 'notes3.txt';
+my $file = 'notes4.txt';
 my @note = $file.IO.r ?? lines $file.IO !! ();
 
 say 'Press h and <Enter> for help, just <Enter> to exit.';
 loop {
-    for @note.kv -> $nr, $line {
-        say $nr, ' : ', $line;
-    }
+    for @note.kv {say "$^nr : $^text"}
 
     given prompt 'Write a new note? ' {
         when /^$/                { last }
@@ -22,7 +20,7 @@ loop {
                splice( @note, $1, 0, splice( @note, $0, 1));
             }     
         }
-        when '^da$'                 { @note = (); }
+        when '^da$'              { @note = (); }
         default { 
             say q:to/END/;
                 general format: <1 letter = command> <voluntary space> ...
