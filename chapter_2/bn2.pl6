@@ -6,8 +6,8 @@ my @note;
 
 say 'Press h and <Enter> for help, just <Enter> to exit.';
 loop {
-    for @note.kv -> $nr, $line {
-        say $nr, ' : ', $line;
+    for @note.kv -> $index, $note {
+        say $index, ' : ', $note;
     }
 
     my $answer = prompt 'Write a new note? ';

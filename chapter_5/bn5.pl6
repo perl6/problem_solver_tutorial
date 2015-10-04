@@ -4,35 +4,30 @@ my $file = 'notes5.txt';
 my @note = ();
 if $file.IO.r {
     for lines $file.IO -> $line {
-        push @note, { content => $line, written => '', attr => [] }
+        push @note, { content => $line }
     }
 }
 
-my token pos   { \d+ }
 my token msg   {  .+ }
-my token space { \s* }
-my token bump  { <.space> [ \: | \. | \| ] <.space>}
+my token pos   { \d+ }
+my token bump  { <.ws> [ \: | \. | \| ] <.ws>}
 
 say 'Press h and <Enter> for help, just <Enter> to exit.';
 loop {
-    for @note.kv {say "$^nr : $^text"}
+    for @note.kv {say "$^index : $^note<content> "}
 
     given prompt 'Write a new note? ' {
         when ''                     { last }
         when 'da'                   { @note = () }
-        when /^\s <.space> <msg>/   { push @note, $/<msg> }
-        when /^ a <.space> <msg>/   { push @note, $/<msg> }
-        when /^ p <.space> <msg>/   { unshift @note, $/<msg> }
-        when /^ r <.space> <pos>/   { splice @note, $/<pos>, 1 if 0 <= $/<pos> < +@note }
-        when /^ i <.space> <pos> <bump> <msg>/ {
-            splice @note, $/<pos>, 0, $/<msg> if 0 <= $/<pos> <= +@note
-        }
-        when /^ c <.space> <pos> <bump> <msg>/ {
-            @note[<pos>] = $/<msg> if 0 <= $/<pos> < +@note
-        }
-        when /^ m <.space> <pos> <bump> <pos>/ {
-            if 0 <= $/<pos>[0] < +@note and 0 <= $/<pos>[1] < +@note {
-               splice( @note, $/<pos>[1], 0, splice( @note, $/<pos>[0], 1));
+        when /^\s <.ws> <msg>/      { push @note, { content => $<msg> } }
+        when /^ a <.ws> <msg>/      { push @note, { content => $<msg> } }
+        when /^ p <.ws> <msg>/      { unshift @note, { content => $<msg> } }
+        when /^ r <.ws> <pos>/      { splice @note, $<pos>, 1 if 0 <= $<pos> < +@note }
+        when /^ c <.ws> <pos> <bump> <msg>/ { @note[<pos>]<content> = $<msg> if 0 <= $<pos> < +@note }
+        when /^ i <.ws> <pos> <bump> <msg>/ { splice @note, $<pos>, 0, $<msg> if 0 <= $<pos> <= +@note }
+        when /^ m <.ws> <pos> <bump> <pos>/ {
+            if 0 <= $<pos>[0] < +@note and 0 <= $<pos>[1] < +@note {
+               splice( @note, $<pos>[1], 0, splice( @note, $<pos>[0], 1));
             }     
         }
         default {
@@ -51,4 +46,4 @@ loop {
     }
 }
 
-spurt $file, join("\n", @note); # write notes into a file
+spurt $file, join("\n", map( { $_<content> }, @note) );

@@ -1,6 +1,6 @@
 use v6;
 
-my $file = 'notes4.txt';
+my $file = 'notes6.txt';
 my @note = ();
 if $file.IO.r {
     for lines $file.IO -> $line {
@@ -46,4 +46,4 @@ loop {
     }
 }
 
-spurt $file, join("\n", map { $_<content> }, @note);
+spurt $file, join("\n", map( { $_<content> }, @note) );
