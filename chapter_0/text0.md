@@ -1,10 +1,11 @@
- 
+
+
 
             Perl 6 for problem solver - Chapter 0
+            =====================================
 
 
-   * goals
-   * methods
+   * goals and methods
    * layout of the whole and structure of each chapter
    * few prerequisites
    * first tiny example: hello math !
@@ -18,8 +19,8 @@ into more complicated settings without getting lost. Not much programming or
 computer science knowledge is therefore required, just an occasional 
 lookup in wikipedia or a search engine.
 
-At the end of each chapter stands a working program,
-which hopefully becomes useful to you. 
+> At the end of each chapter stands a working program,
+> which hopefully becomes useful to you. 
 
 
 During the course an application
@@ -32,3 +33,8 @@ What it aims
 that filled in by quick search,
 and leaves you with just enough knowledge to write real world programs and where to look for help,
 in case .
+
+`use v6;
+ 
+my $quest = prompt 'Your Math Question? '; 
+say 'Result: ', EVAL $quest;`
