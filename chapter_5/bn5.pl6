@@ -8,25 +8,34 @@ if $file.IO.r {
     }
 }
 
+my token pos   { \d+ }
+my token msg   {  .+ }
+my token space { \s* }
+my token bump  { <.space> [ \: | \. | \| ] <.space>}
+
 say 'Press h and <Enter> for help, just <Enter> to exit.';
 loop {
     for @note.kv {say "$^nr : $^text"}
 
     given prompt 'Write a new note? ' {
-        when ''                    { last }
-        when 'da'                  { @note = () }
-        when /^   \s+ (.+)/        { push @note, $/[0] }
-        when /^ a \s* (.+)/        { push @note, $/[0] }
-        when /^ p \s* (.+)/        { unshift @note, $/[0] }
-        when /^ c \s* (\d+)\:(.+)/ { @note[$0] = $/[1] if 0 <= $/[0] < +@note }
-        when /^ i \s* (\d+)\:(.+)/ { splice @note, $/[0], 0, $/[1] if 0 <= $/[0] <= +@note }
-        when /^ r \s* (\d+)/       { splice @note, $/[0], 1 if 0 <= $/[0] < +@note }
-        when /^ m \s* (\d+)\:(\d+)/{
-            if 0 <= $/[0] < +@note and 0 <= $/[1] < +@note {
-               splice( @note, $/[1], 0, splice( @note, $/[0], 1));
+        when ''                     { last }
+        when 'da'                   { @note = () }
+        when /^\s <.space> <msg>/   { push @note, $/<msg> }
+        when /^ a <.space> <msg>/   { push @note, $/<msg> }
+        when /^ p <.space> <msg>/   { unshift @note, $/<msg> }
+        when /^ r <.space> <pos>/   { splice @note, $/<pos>, 1 if 0 <= $/<pos> < +@note }
+        when /^ i <.space> <pos> <bump> <msg>/ {
+            splice @note, $/<pos>, 0, $/<msg> if 0 <= $/<pos> <= +@note
+        }
+        when /^ c <.space> <pos> <bump> <msg>/ {
+            @note[<pos>] = $/<msg> if 0 <= $/<pos> < +@note
+        }
+        when /^ m <.space> <pos> <bump> <pos>/ {
+            if 0 <= $/<pos>[0] < +@note and 0 <= $/<pos>[1] < +@note {
+               splice( @note, $/<pos>[1], 0, splice( @note, $/<pos>[0], 1));
             }     
         }
-        default { 
+        default {
             say q:to/END/;
                 general format: <1 letter = command> <voluntary space> ...
                 append :    note ...    or

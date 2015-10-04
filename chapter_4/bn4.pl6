@@ -3,7 +3,10 @@ use v6;
 my $file = 'notes4.txt';
 my @note = $file.IO.r ?? lines $file.IO !! ();
 
-my token pos { \d+ }
+my token pos   { \d+ }
+my token msg   {  .+ }
+my token space { \s* }
+my token bump  { <.space> [ \: | \. | \| ] <.space>}
 
 say 'Press h and <Enter> for help, just <Enter> to exit.';
 loop {
@@ -12,15 +15,19 @@ loop {
     given prompt 'Write a new note? ' {
         when ''                     { last }
         when 'da'                   { @note = () }
-        when /^   \s+ (.+)/         { push @note, $/[0] }
-        when /^ a \s* (.+)/         { push @note, $/[0] }
-        when /^ p \s* (.+)/         { unshift @note, $/[0] }
-        when /^ r \s* <digit>+/     { splice @note, $/<digit>, 1 if 0 <= $/<digit> < +@note }
-        when /^ i \s* (\d+)\:(.+)/  { splice @note, $/[0], 0, $/[1] if 0 <= $/[0] <= +@note }
-        when /^ c \s* (\d+)\:(.+)/  { @note[$0] = $/[1] if 0 <= $/[0] < +@note }
-        when /^ m \s* (\d+)\:(\d+)/ {
-            if 0 <= $/[0] < +@note and 0 <= $/[1] < +@note {
-               splice( @note, $/[1], 0, splice( @note, $/[0], 1));
+        when /^\s <.space> <msg>/   { push @note, $/<msg> }
+        when /^ a <.space> <msg>/   { push @note, $/<msg> }
+        when /^ p <.space> <msg>/   { unshift @note, $/<msg> }
+        when /^ r <.space> <pos>/   { splice @note, $/<pos>, 1 if 0 <= $/<pos> < +@note }
+        when /^ i <.space> <pos> <bump> <msg>/ {
+            splice @note, $/<pos>, 0, $/<msg> if 0 <= $/<pos> <= +@note
+        }
+        when /^ c <.space> <pos> <bump> <msg>/ {
+            @note[<pos>] = $/<msg> if 0 <= $/<pos> < +@note
+        }
+        when /^ m <.space> <pos> <bump> <pos>/ {
+            if 0 <= $/<pos>[0] < +@note and 0 <= $/<pos>[1] < +@note {
+               splice( @note, $/<pos>[1], 0, splice( @note, $/<pos>[0], 1));
             }     
         }
         default {
