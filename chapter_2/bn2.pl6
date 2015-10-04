@@ -2,7 +2,6 @@ use v6;
 
 my $file = 'notes2.txt';
 my @note;
-
 @note = lines $file.IO if $file.IO.r;
 
 say 'Press h and <Enter> for help, just <Enter> to exit.';

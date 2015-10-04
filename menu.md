@@ -4,8 +4,8 @@
    + [Chapter 2](/chapter_2/text2.md)    [Code](/chapter_2/bn2.pl6)
    + [Chapter 3](/chapter_3/text3.md)    [Code](/chapter_3/bn3.pl6)
    + [Chapter 4](/chapter_4/text4.md)    [Code](/chapter_4/bn4.pl6)
-   + Chapter 5
-   + Chapter 6
+   + [Chapter 5](/chapter_5/text5.md)    [Code](/chapter_5/bn5.pl6)
+   + [Chapter 6](/chapter_6/text6.md)    [Code](/chapter_6/bn6.pl6)
    + Chapter 7
    + Chapter 8
    + Chapter 9

@@ -8,7 +8,8 @@ loop {
     for @note.kv {say "$^nr : $^text"}
 
     given prompt 'Write a new note? ' {
-        when /^$/                { last }
+        when ''                  { last }
+        when 'da'                { @note = () }
         when /^ \s+(.+)/         { push @note, $0 }
         when /^a\s*(.+)/         { push @note, $0 }
         when /^p\s*(.+)/         { unshift @note, $0 }
@@ -20,7 +21,6 @@ loop {
                splice( @note, $1, 0, splice( @note, $0, 1));
             }     
         }
-        when '^da$'              { @note = (); }
         default { 
             say q:to/END/;
                 general format: <1 letter = command> <voluntary space> ...
