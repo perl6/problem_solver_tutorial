@@ -1,8 +1,8 @@
 
 
 
-            Perl 6 for problem solver - Chapter 0
-            =====================================
+Perl 6 for problem solver - Chapter 0
+=====================================
 
 
    * goals and methods

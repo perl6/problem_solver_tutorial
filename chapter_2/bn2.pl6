@@ -6,8 +6,8 @@ my @note;
 
 say 'Press h and <Enter> for help, just <Enter> to exit.';
 loop {
-    for @note.kv -> $index, $note {
-        say $index, ' : ', $note;
+    loop (my $index = 0; $index <= @note.end; $index++) {
+        say $index, ' : ', @note[$index];
     }
 
     my $answer = prompt 'Write a new note? ';

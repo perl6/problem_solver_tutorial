@@ -5,20 +5,20 @@ my @note = $file.IO.r ?? lines $file.IO !! ();
 
 say 'Press h and <Enter> for help, just <Enter> to exit.';
 loop {
-    for @note.kv {say "$^nr : $^text"}
+    for @note.kv -> $index, $note { say $index, ' : ', $note }
 
     given prompt 'Write a new note? ' {
         when ''                     { last }
         when 'da'                   { @note = () }
-        when /^   \s+ (.+)/         { push @note, $/[0] }
-        when /^ a \s* (.+)/         { push @note, $/[0] }
-        when /^ p \s* (.+)/         { unshift @note, $/[0] }
-        when /^ r \s* (\d+)/        { splice @note, $/[0], 1 if 0 <= $/[0] < +@note }
-        when /^ i \s* (\d+)\:(.+)/  { splice @note, $/[0], 0, $/[1] if 0 <= $/[0] <= +@note }
-        when /^ c \s* (\d+)\:(.+)/  { @note[$0] = $/[1] if 0 <= $/[0] < +@note }
+        when /^   \s+ (.+)/         { push @note, $0 }
+        when /^ a \s* (.+)/         { push @note, $0 }
+        when /^ p \s* (.+)/         { unshift @note, $0 }
+        when /^ r \s* (\d+)/        { splice @note, $0, 1 if 0 <= $0 < +@note }
+        when /^ i \s* (\d+)\:(.+)/  { splice @note, $0, 0, $1 if 0 <= $0 <= +@note }
+        when /^ c \s* (\d+)\:(.+)/  { @note[$0] = $1 if 0 <= $0 < +@note }
         when /^ m \s* (\d+)\:(\d+)/ {
-            if 0 <= $/[0] < +@note and 0 <= $/[1] < +@note {
-               splice( @note, $/[1], 0, splice( @note, $/[0], 1));
+            if 0 <= $0 < +@note and 0 <= $1 < +@note {
+               splice( @note, $1, 0, splice( @note, $0, 1));
             }     
         }
         default {
