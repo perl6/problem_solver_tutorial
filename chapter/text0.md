@@ -11,7 +11,10 @@ Perl 6 for problem solver - Chapter 0
    * first tiny example: hello math !
 
 
-Welcome to our little tutorial: "Perl 6 for problem solver".
+Welcome,
+if you ever wondered what Perl 6 is able
+ to this practical Tutorial, aimed to people who learn the most while
+our little tutorial: "Perl 6 for problem solver".
 It's made for practical people. So writing working code will be the main vehicle
 to show you the wonderful World of this well layed out language.
 Theory and Perl philosophy will be taught on the fly and just enough to dive

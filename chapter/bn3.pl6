@@ -37,4 +37,4 @@ loop {
     }
 }
 
-spurt $file, join("\n", @note); # write notes into a file
+spurt $file, join("\n", @note);

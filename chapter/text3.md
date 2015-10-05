@@ -4,11 +4,11 @@
 
 
    * ternary op: `?? !!`
+   * chained comparisons
    * loops: `for`, `last`
    * pointy block syntax `->`
    * regular expression with `^`, `.`, `\s`, `\d`, `*`, `+`, `()`
    * positional capture variables
-   * chained comparisons
    * heredoc's with `q`, `to`
 
 

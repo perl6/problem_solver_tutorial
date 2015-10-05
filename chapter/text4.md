@@ -8,6 +8,8 @@
    * regex with named captures
    * named capture variables
    * list manipulation with `map`
+   * smartmatch `~~`
+   * ranges (`..`) using `^`
 
 
     $/[0] $()/[0] $0

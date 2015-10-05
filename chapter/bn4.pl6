@@ -22,13 +22,15 @@ loop {
         when /^\s <.ws> <msg>/      { push @note, { content => $<msg> } }
         when /^ a <.ws> <msg>/      { push @note, { content => $<msg> } }
         when /^ p <.ws> <msg>/      { unshift @note, { content => $<msg> } }
-        when /^ r <.ws> <pos>/      { splice @note, $<pos>, 1 if 0 <= $<pos> < +@note }
-        when /^ c <.ws> <pos> <bump> <msg>/ { @note[<pos>]<content> = $<msg> if 0 <= $<pos> < +@note }
-        when /^ i <.ws> <pos> <bump> <msg>/ { splice @note, $<pos>, 0, $<msg> if 0 <= $<pos> <= +@note }
+        when /^ r <.ws> <pos>/      { splice @note, $<pos>, 1 if $<pos> ~~ 0 ..^ +@note}
+        when /^ c <.ws> <pos> <bump> <msg>/ { @note[<pos>]<content> = $<msg> if $<pos> ~~ 0 ..^ +@note }
+        when /^ i <.ws> <pos> <bump> <msg>/ { 
+            splice @note, $<pos>, 0, { content => $<msg> } if $<pos> ~~ 0 .. +@note
+        }
         when /^ m <.ws> <pos> <bump> <pos>/ {
-            if 0 <= $<pos>[0] < +@note and 0 <= $<pos>[1] < +@note {
+            if $<pos>[0] ~~ 0 ..^ +@note and $<pos>[1] ~~ 0 ..^ +@note {
                splice( @note, $<pos>[1], 0, splice( @note, $<pos>[0], 1));
-            }     
+            } else { say 'index outside list range'}
         }
         default {
             say q:to/END/;

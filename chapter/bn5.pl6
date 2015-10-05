@@ -18,13 +18,13 @@ loop {
         when /^\s <.ws> <msg>/      { create_note(@note, $<msg>) }
         when /^ a <.ws> <msg>/      { create_note(@note, $<msg>) }
         when /^ p <.ws> <msg>/      { create_note(@note, $<msg>, 0) }
-        when /^ r <.ws> <pos>/      { splice @note, $<pos>, 1 if 0 <= $<pos> < +@note }
-        when /^ c <.ws> <pos> <bump> <msg>/ { @note[<pos>]<content> = $<msg> if 0 <= $<pos> < +@note }
+        when /^ r <.ws> <pos>/      { splice @note, $<pos>, 1 if $<pos> ~~ 0 ..^ +@note }
+        when /^ c <.ws> <pos> <bump> <msg>/ { @note[<pos>]<content> = $<msg> if $<pos> ~~ 0 ..^ +@note }
         when /^ i <.ws> <pos> <bump> <msg>/ { create_note($<msg>, $<pos>) }
         when /^ m <.ws> <pos> <bump> <pos>/ {
-            if 0 <= $<pos>[0] < +@note and 0 <= $<pos>[1] < +@note {
+            if $<pos>[0] ~~ 0 ..^ +@note and $<pos>[1] ~~ 0 ..^ +@note {
                splice( @note, $<pos>[1], 0, splice( @note, $<pos>[0], 1));
-            }     
+            } else { say 'index outside list range'}
         }
         default {
             say q:to/END/;
@@ -47,8 +47,8 @@ write_notes( $file, @note);
 
 
 sub create_note ( Hash @note, $msg, Int $pos? =  @note.elems){
-    if 0 <= $pos <= +@note { splice @note, $pos, 0, { content => $msg } }
-    else                   { say 'index outside the array range' }    
+    if $pos ~~ 0 ..^ +@note { splice @note, $pos, 0, { content => $msg } }
+    else                    { say 'index outside the array range' }    
 }
 
 sub read_notes ($file --> Array[Hash] ) {
