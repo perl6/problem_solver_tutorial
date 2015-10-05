@@ -8,7 +8,6 @@
    * pointy block syntax `->`
    * regular expression with `^`, `.`, `\s`, `\d`, `*`, `+`, `()`
    * positional capture variables
-   * numeric context: `+`
    * chained comparisons
    * heredoc's with `q`, `to`
 

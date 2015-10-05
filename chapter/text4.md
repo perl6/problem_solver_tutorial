@@ -3,14 +3,11 @@
 #Perl 6 for problem solver - Chapter 4
 
 
-   * ternary op: `?? !!`
-   * loops: `for`, `last`
-   * pointy block syntax `->`
-   * regular expression with `^`, `.`, `\s`, `\d`, `*`, `+`, `()`
-   * positional capture variables
-   * numeric context: `+`
-   * chained comparisons
-   * heredoc's with `q`, `to`
+   * hash variables
+   * anonymous hashes for nested structure (AoH)
+   * regex with named captures
+   * named capture variables
+   * list manipulation with `map`
 
 
     $/[0] $()/[0] $0
