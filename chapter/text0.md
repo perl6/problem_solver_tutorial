@@ -34,7 +34,7 @@ that filled in by quick search,
 and leaves you with just enough knowledge to write real world programs and where to look for help,
 in case .
 
-`use v6;
+`use v6;`
  
-my $quest = prompt 'Your Math Question? '; 
-say 'Result: ', EVAL $quest;`
+`my $quest = prompt 'Your Math Question? ';`
+`say 'Result: ', EVAL $quest;`
