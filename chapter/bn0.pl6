@@ -1,4 +1,3 @@
 use v6;
  
-my $quest = prompt 'Your Math Question? '; 
-say 'Result: ', EVAL $quest;
+say 'Result: ', EVAL( prompt 'Your Math Question? ' );

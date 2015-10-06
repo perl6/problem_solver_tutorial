@@ -1,17 +1,46 @@
 
 
-
 Perl 6 for problem solver - Chapter 0
 =====================================
 
 
    * goals and methods
+   * few (4) prerequisites
    * layout of the whole and structure of each chapter
-   * few prerequisites
    * first tiny example: hello math !
+   * Perl philosophy
+   * basic syntax rules
 
+
+Goals
+-----
 
 Welcome,
+to this hands on tour through the more often needed details of this vast and beautiful
+programming language. It is designed to provide you with:
+
+   - syntax knowledge
+   - bits of deeper understanding of the semantics
+   - sources for further learning (docs and more)
+   - a useful application
+   - room for own experiments
+   - a taste of the full capabilities
+
+
+Methods
+-------
+
+
+
+Prerequisites
+-------------
+
+
+   - (any) editor
+   - (any) shell
+   - few programming basics
+   - curiosity
+
 if you ever wondered what Perl 6 is able
  to this practical Tutorial, aimed to people who learn the most while
 our little tutorial: "Perl 6 for problem solver".
@@ -32,12 +61,9 @@ Each chapter
 for teaches you enough of this 
 It requires almost none background in programming or computer science -
 just handling a search engine should be fine.
-What it aims
-that filled in by quick search,
-and leaves you with just enough knowledge to write real world programs and where to look for help,
-in case .
+What it aims that filled in by quick search,
+
 
 `use v6;`
  
-`my $quest = prompt 'Your Math Question? ';`
-`say 'Result: ', EVAL $quest;`
+`say 'Result: ', EVAL prompt 'Your Math Question? ';`
