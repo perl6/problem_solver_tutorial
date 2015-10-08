@@ -1,6 +1,6 @@
 
 
-Perl 6 for problem solver - [Chapter 0][head]
+Perl 6 for problem solver - [Chapter]() 0
 =========================================
 
 
@@ -13,7 +13,7 @@ Perl 6 for problem solver - [Chapter 0][head]
 
 
 
-[Goals](#head)
+[Goals](#chapter)
 --------------
 
 Welcome,
@@ -29,7 +29,7 @@ programming language. You can find here:
 
 
 
-[Methods](#head)
+[Methods](#chapter)
 -----------
 
 While all the action might be mostly between "you and your computer", we try to give
