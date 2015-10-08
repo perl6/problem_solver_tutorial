@@ -1,7 +1,7 @@
 
 
-Perl 6 for problem solver - [Chapter 0](/../menu)
-=========================================
+[Chapter 0](/../menu.md)
+========================
 
 
    * [goals](#goals) and [methods](#methods)
