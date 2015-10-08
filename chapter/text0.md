@@ -1,19 +1,19 @@
 
 
-Perl 6 for problem solver - [Chapter]() 0
+Perl 6 for problem solver - [Chapter 0](/../menu)
 =========================================
 
 
    * [goals](#goals) and [methods](#methods)
-   * few prerequisites
-   * layout of the whole and structure of each chapter
-   * first tiny example: hello math !
-   * Perl philosophy
-   * basic syntax rules
+   * [few prerequisites](#prerequisites)
+   * [layout of the whole and structure of each chapter](#chapter-layout)
+   * [Perl philosophy](#perl-philosophy)
+   * [basic syntax rules](#basic-syntax-rules)
+   * [first tiny example: hello math !](#first-example)
 
 
 
-[Goals](#chapter)
+[Goals](#chapter-0)
 --------------
 
 Welcome,
@@ -29,7 +29,7 @@ programming language. You can find here:
 
 
 
-[Methods](#chapter)
+[Methods](#chapter-0)
 -----------
 
 While all the action might be mostly between "you and your computer", we try to give
@@ -55,8 +55,8 @@ through the whole tutorial might be a big extra task.
 
 
 
-Prerequisites
--------------
+[Prerequisites](#chapter-0)
+--------------------------
 
    - curiosity
    - few programming basics
@@ -65,6 +65,10 @@ Prerequisites
    - an open browser
 
 ----
+
+
+[Chapter Layout](#chapter-0)
+--------------------------
 
 if you ever wondered what Perl 6 is able
  to this practical Tutorial, aimed to people who learn the most while
@@ -89,6 +93,22 @@ just handling a search engine should be fine.
 What it aims that filled in by quick search,
 
 
+[Perl Philosophy](#chapter-0)
+--------------------------
+
+[Basic Syntax Rules](#chapter-0)
+--------------------------
+
+
+
+[First Example](#chapter-0)
+--------------------------
+
+
 `use v6;`
  
 `say 'Result: ', EVAL prompt 'Your Math Question? ';`
+
+
+
+[^Up^](#chapter-0)
