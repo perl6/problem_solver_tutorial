@@ -1,11 +1,11 @@
 
 
-Perl 6 for problem solver - Chapter 0
-=====================================
+Perl 6 for problem solver - [Chapter][] 0
+=========================================
 
 
-   * goals and methods
-   * few (4) prerequisites
+   * [goals][#goals] and [methods][#methods]
+   * few prerequisites
    * layout of the whole and structure of each chapter
    * first tiny example: hello math !
    * Perl philosophy
@@ -13,8 +13,8 @@ Perl 6 for problem solver - Chapter 0
 
 
 
-Goals
------
+[Goals][#chapter]
+-------
 
 Welcome,
 to this hands on tour through the more often needed parts of this vast and beautiful
@@ -29,7 +29,7 @@ programming language. You can find here:
 
 
 
-Methods
+[Methods][#chapter]
 -------
 
 While all the action might be mostly between "you and your computer", we try to give
