@@ -1,6 +1,6 @@
 
 
-[Chapter 0](/../menu.md)
+[Chapter 0](../menu.md)
 ========================
 
 

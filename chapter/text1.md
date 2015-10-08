@@ -1,6 +1,7 @@
 
 
-#[Chapter 1](/../menu.md)
+[Chapter 1](../menu.md)
+========================
 
 
    * scalar variables
