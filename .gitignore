@@ -1,1 +1,4 @@
 chapter/notes*.txt
+chapter/*~
+*~
+*#
