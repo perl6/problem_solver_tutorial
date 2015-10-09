@@ -1,6 +1,7 @@
 
 
-#Perl 6 for problem solver - Chapter 2
+[Chapter 2](../menu.md)
+========================
 
 
    * array variables 
@@ -10,3 +11,8 @@
    * loops: `loop` (both uses)
    * conditionals: `given`, `when`, `default`
    * numeric context: `+`
+
+
+
+[^Up^](#chapter-2)
+

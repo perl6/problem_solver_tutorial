@@ -1,9 +1,18 @@
 
 
-#Perl 6 for problem solver - Chapter 5
+[Chapter 5](../menu.md)
+========================
 
 
    * subroutines
-   * types ans nested types
-   * signatures with [return] types, optional parameter, default value
+   * types and nested types
    * self made subtypes
+   * signatures with (return) types
+   * optional parameter with default values
+   * write and use modules
+   * exporting and improting from a module
+
+
+
+[^Up^](#chapter-5)
+

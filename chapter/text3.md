@@ -1,6 +1,7 @@
 
 
-#Perl 6 for problem solver - Chapter 3
+[Chapter 3](../menu.md)
+========================
 
 
    * ternary op: `?? !!`
@@ -14,3 +15,7 @@
 
     $/[0] $()/[0] $0
     style for first,  last easy to overlook
+
+
+
+[^Up^](#chapter-3)

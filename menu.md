@@ -1,5 +1,5 @@
 #Perl 6 for problem solver
-   
+
    + [Chapter 0](/chapter/text0.md) ....... [Main Program](/chapter/bn0.pl6)
    + [Chapter 1](/chapter/text1.md) ....... [Main Program](/chapter/bn1.pl6)
    + [Chapter 2](/chapter/text2.md) ....... [Main Program](/chapter/bn2.pl6)
@@ -12,3 +12,8 @@
    + Chapter 9
    + Chapter 10
    + Chapter 11
+   + Chapter 12
+
+
+   Just click on links, clicking on headings brings you one level up.
+
