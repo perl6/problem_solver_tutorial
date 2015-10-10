@@ -20,10 +20,10 @@ Welcome,
 to this hands on tour through the more often needed parts of this vast and beautiful
 programming language. You can find here:
 
-   - syntax knowledge
-   - bits of deeper understanding for the design decisions
-   - room for own experiments
-   - a useful application
+   - syntax knowledge:
+   - bits of deeper understanding for the design decisions:
+   - room for own experiments:
+   - a hopefully useful application:
    - a taste of the full capabilities
    - sources for further learning (docs and more)
 
@@ -35,22 +35,26 @@ programming language. You can find here:
 While all the action takes place between "you and your computer", we try to
 give you a feel that someone is guiding you in a real-world programming situation.
 You will be able to follow a train of thought from the first strategic decisions,
-to the selection process of finding the most suitable Perl feature,
-then to the trying out of several ways to formulate it, up to the polishing edits.
+to the selection process of finding the most suitable Perl feature, to the
+following trying out of several ways to formulate it, up to the polishing edits.
 A final evaluation helps to understand, what has been achieved.
 
-That sounds like lot of text - but we actually do our best to keep it concise.
+That sounds like lot of text - but we actually try to keep it concise as possible.
 Links to more detailed information will be provided on the spot needed.
 The tutorial also advances with a rather fast pace. Therefore we encourage you to
-read a chapter or paragraph repeatedly, as long you feel like not fully getting it.
-If an explantation just dind't made sense to you - please let us know via github.
+reread a chapter or paragraph, if you felt like not fully understanding it.
+Or you follow the trail of code snippets in a chapter. Running them as oneliner,
+and and using them as basis of explorations might be your favorite learning style.
+Rereading a chapter after that also clarifies a lot.
+And reading the chapter after some minutes of such adventure can clarify.
+When an explantation still doesn't makes sense to you - please let us know via github.
 It is most important to us not to bore and provoke your own inquiries.
 
 The flip side of this practical, yet dense approach: you (mostly) have to stick
-with the order of the content and won't be able to skip even several sentences.
+with the given order and won't be able to skip even several sentences.
 Because then you overlook the introduction of an important feature, which will be
-premised over and over. This is especially true during the chapter 1-6 and an
-inevitable side effect of developing one program throughout the whole tutorial.
+premised over and over. This is especially true during chapter 2-6 and an inevitable
+side effect of developing one example program throughout the whole tutorial.
 While we strongly recommend to adapt it to your wishes, you should be be aware,
 that maintaining them through all changes can be a demanding task.
 
@@ -59,8 +63,10 @@ that maintaining them through all changes can be a demanding task.
 [Chapter Layout](#chapter-0)
 --------------------------
 
-
-Each chapter has a main topic and some (often related) subtopics. 
+The strategy of building one none trivial application also disables us to expound
+all topics in the order from A to Z. But even if we cater to the practical needs
+of the task - each chapter has a main topic and several smaller ones, which are
+often related to the bigger.
 
 
 ----
@@ -71,30 +77,7 @@ Each chapter has a main topic and some (often related) subtopics.
 
 start with some bits
 main parts
-some bits 
-
-
-if you ever wondered what Perl 6 is able
- to this practical Tutorial, aimed to people who learn the most while
-our little tutorial: "Perl 6 for problem solver".
-It's made for practical people. So writing working code will be the main vehicle
-to show you the wonderful World of this well layed out language.
-Theory and Perl philosophy will be taught on the fly and just enough to dive
-into more complicated settings without getting lost. Not much programming or
-computer science knowledge is therefore required, just an occasional 
-lookup in wikipedia or a search engine.
-
-
-
-
-
-> At the end of each chapter stands a working program,
-> which hopefully becomes useful to you. 
-
-
-During the course an application
-It requires almost none background in programming or computer science -
-What it aims that filled in by quick search,
+some bits
 
 
 
@@ -112,17 +95,25 @@ What it aims that filled in by quick search,
 [Perl Philosophy](#chapter-0)
 -----------------------------
 
+keep easy
+hard possible
+TIMTOWDTI
+natural language
 
 
 
 [Basic Syntax Rules](#chapter-0)
 --------------------------------
 
+white space
+semicolon
+braces
 
 
 [First Example](#chapter-0)
 --------------------------
 
+not explaining details
 
 `use v6;`
  
