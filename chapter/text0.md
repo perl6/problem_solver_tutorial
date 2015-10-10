@@ -1,7 +1,7 @@
 
 
-[Chapter 0](../menu.md)
-========================
+[Chapter 0](../table-of-content.md)
+===================================
 
 
    * [goals](#goals) and [methods](#teaching-method)
@@ -63,22 +63,25 @@ that maintaining them through all changes can be a demanding task.
 [Chapter Layout](#chapter-0)
 --------------------------
 
-The strategy of building a none trivial application also forces sometimes
-disables us to expound
-all topics in the order from A to Z. But even if we cater to the practical needs
-of the task - each chapter has a main topic and several smaller ones, which are
-often related to the bigger.
+The practical needs of the growing application did sometimes overrule the
+educational intents of the author. Nonetheless there is a golden thread 
+and the menu(table of contents) as the index as well show where to find what.
 
+Every chapter has a main topic and several (mostly 6) (often related) subtopics.
+Together they allow to bring the program to a new stage, introducing a new
+feature set or a new style of programming. The source code in each stage is
+included (see table of content). Number in file names refer to a chapter.
 
-----
+Each chapter has several paragraphs. They correspond to the subheadings in the table
+of content and covers only a single command, operator or another language feature. 
+Usually they have just the right length to be read in 5 to 10 minutes.
+After that the tutorial can be easily put aside - to practice the new knowledge
+or to leave the train. 
 
-   !!! from here on the text is in raw state !!!
-
-----
-
-start with some bits
-main parts
-some bits
+Chapters are also optimized for reading them in one swoop. The first paragraph(s)
+are commonly an easy read - a warm up to get accustomed to the topic.
+The most challenging part is in the middle, while the end serves as a fade out
+and for reflection.
 
 
 
@@ -95,6 +98,14 @@ some bits
    
 [Perl Philosophy](#chapter-0)
 -----------------------------
+
+
+----
+
+   !!! from here on the text is in raw state !!!
+
+----
+
 
 keep easy
 hard possible
