@@ -133,4 +133,6 @@ not explaining details
 
 
 
-[^Up^](#chapter-0)
+[^chapter start^](#chapter-0)
+
+[^^table of content^^](../table-of-content.md)

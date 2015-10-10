@@ -2,7 +2,7 @@
 
    + [Chapter 0](/chapter/text0.md) .............. [Main Program](/chapter/bn0.pl6)
      - [goals](/chapter/text0.md#goals) and [methods](/chapter/text0.md#teaching-method)
-     - [layout of the chapters and paragraphs](#chapter-layout)
+     - [layout of the chapters and paragraphs](/chapter/text0.md#chapter-layout)
      - [few prerequisites](/chapter/text0.md#prerequisites)
      - [Perl philosophy](/chapter/text0.md#perl-philosophy)
      - [basic syntax rules](/chapter/text0.md#basic-syntax-rules)
