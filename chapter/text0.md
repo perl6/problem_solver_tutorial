@@ -5,7 +5,7 @@
 
 
    * [goals](#goals) and [methods](#teaching-method)
-   * [layout of the whole and structure of each chapter](#chapter-layout)
+   * [layout of the chapters and paragraphs](#chapter-layout)
    * [few prerequisites](#prerequisites)
    * [Perl philosophy](#perl-philosophy)
    * [basic syntax rules](#basic-syntax-rules)
@@ -17,14 +17,14 @@
 -------------------
 
 Welcome,
-to this hands on tour through the more often needed parts of this vast and beautiful
-programming language. You can find here:
+to this hands on tour through the more often needed parts of this vast and
+beautiful programming language. You can find here:
 
    - syntax knowledge:
    - bits of deeper understanding for the design decisions:
    - room for own experiments:
    - a hopefully useful application:
-   - a taste of the full capabilities
+   - a taste of the full capabilities of Perl 6
    - sources for further learning (docs and more)
 
 
@@ -32,8 +32,10 @@ programming language. You can find here:
 [Teaching Method](#chapter-0)
 -----------------------------
 
-While all the action takes place between "you and your computer", we try to
-give you a feel that someone is guiding you in a real-world programming situation.
+While action takes place between "you and your computer", we try to give you
+the feel that someone is guiding you in a real-world programming situation.
+We think that this will be way more human, interesting and educational,
+than "talking in class room about driving cars".
 You will be able to follow a train of thought from the first strategic decisions,
 to the selection process of finding the most suitable Perl feature, to the
 following trying out of several ways to formulate it, up to the polishing edits.
@@ -44,11 +46,9 @@ Links to more detailed information will be provided on the spot needed.
 The tutorial also advances with a rather fast pace. Therefore we encourage you to
 reread a chapter or paragraph, if you felt like not fully understanding it.
 Or you follow the trail of code snippets in a chapter. Running them as oneliner,
-and and using them as basis of explorations might be your favorite learning style.
-Rereading a chapter after that also clarifies a lot.
-And reading the chapter after some minutes of such adventure can clarify.
-When an explantation still doesn't makes sense to you - please let us know via github.
-It is most important to us not to bore and provoke your own inquiries.
+and and using them ot the main program as basis of explorations might be your
+favorite learning style. Rereading a chapter after that also clarifies a lot.
+When an explanation still doesn't makes sense to you - please let us know via github.
 
 The flip side of this practical, yet dense approach: you (mostly) have to stick
 with the given order and won't be able to skip even several sentences.
@@ -63,7 +63,8 @@ that maintaining them through all changes can be a demanding task.
 [Chapter Layout](#chapter-0)
 --------------------------
 
-The strategy of building one none trivial application also disables us to expound
+The strategy of building a none trivial application also forces sometimes
+disables us to expound
 all topics in the order from A to Z. But even if we cater to the practical needs
 of the task - each chapter has a main topic and several smaller ones, which are
 often related to the bigger.
