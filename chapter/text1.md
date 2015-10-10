@@ -1,7 +1,7 @@
 
 
-[Chapter 1](../menu.md)
-========================
+[Chapter 1](../table-of-content.md)
+===================================
 
 
    * [scalar variables](#scalar-variables)

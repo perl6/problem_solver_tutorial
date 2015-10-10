@@ -1,7 +1,7 @@
 
 
-[Chapter 4](../menu.md)
-========================
+[Chapter 4](../table-of-content.md)
+===================================
 
 
    * hash variables

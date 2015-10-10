@@ -1,7 +1,7 @@
 
 
-[Chapter 2](../menu.md)
-========================
+[Chapter 2](../table-of-content.md)
+===================================
 
 
    * array variables 

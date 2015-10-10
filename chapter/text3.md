@@ -1,7 +1,7 @@
 
 
-[Chapter 3](../menu.md)
-========================
+[Chapter 3](../table-of-content.md)
+===================================
 
 
    * ternary op: `?? !!`

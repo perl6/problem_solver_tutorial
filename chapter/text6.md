@@ -1,7 +1,7 @@
 
 
-[Chapter 6](../menu.md)
-========================
+[Chapter 6](../table-of-content.md)
+===================================
 
 
    * object and classes
