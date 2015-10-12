@@ -1,3 +1,4 @@
+cd ..
 
 
 [Chapter 0](../table-of-content.md)
@@ -5,8 +6,8 @@
 
 
    * [goals](#goals) and [methods](#teaching-method)
-   * [layout of the chapters and paragraphs](#chapter-layout)
-   * [few prerequisites](#prerequisites)
+   * [chapter layout](#chapter-layout)
+   * [prerequisites](#prerequisites)
    * [Perl philosophy](#perl-philosophy)
    * [basic syntax rules](#basic-syntax-rules)
    * [first tiny example: hello math !](#first-example)
@@ -88,10 +89,14 @@ and for reflection.
 [Prerequisites](#chapter-0)
 --------------------------
 
-   - curiosity
-   - few programming basics
-   - any editor
-   - any shell, to run the scripts (unless you can do it from inside the editor)
+   - curiosity:
+   - few programming basics:
+     What are variables or statements - things of that nature.
+     Even computer science terms are used, they get introduced in common English.
+     So a keen mind is whats really needed.
+   - any editor:
+   - any shell:
+     to run the scripts (unless you can do it from inside the editor)
    - an open browser connected to the net
 
 
@@ -99,17 +104,29 @@ and for reflection.
 [Perl Philosophy](#chapter-0)
 -----------------------------
 
+The big banner of Perl was always TIMTOWDTI: There Is More Than One Way To Do It!
+This means that Larry Wall is smart enough to realize, that he is not smart enough
+to make all decisions for you in advance and that providing choice is a good thing.
+But good choices are based on lots of thought and/or experience.
+That means: you as a person and your views are taken seriously.
+You get treated as an adult. But sometimes you have to be an adult
+(programming wise) to use Perls enormous power wisely.
+
+One way Perl 6 differs greatly from Perl 5: it supplies better training wheels.
+Meaning: the usual matters are straight forward. Even the second slogan was
+also always: "Keep easy stuff easy" - a lot of improvements were done in this field.
+On one hand in requiring less knowledge and fumbling for some common operations.
+On the other hand in delivering an outrageously unsuspicious syntax and keeping
+our perlish specialties as the other option in the backyard (TIMTOWTDI).
+
+However the full sentence goes: "Keep the easy stuff easy and hard possible."
+
+
 
 ----
-
    !!! from here on the text is in raw state !!!
-
 ----
 
-
-keep easy
-hard possible
-TIMTOWDTI
 natural language
 
 
@@ -136,3 +153,4 @@ not explaining details
 [^chapter start^](#chapter-0)
 
 [^^table of content^^](../table-of-content.md)
+
