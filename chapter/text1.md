@@ -7,7 +7,7 @@
    * [scalar variables](#scalar-variables)
    * file IO: `slurp`, `spurt` and test op
    * shell IO: `say`, `prompt`
-   * conditionals: `if`, `elsif`, `else` and as statement modifier
+   * conditionals: `if`, `elsif`, `else`, as statement modifier too
    * comparison ops (`>`, `eq`)
    * single ('') and double ("") quoting
    * string context and  concatenation `~`

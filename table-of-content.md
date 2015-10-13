@@ -2,7 +2,7 @@
 
    + [Chapter 0](/chapter/text0.md) ..................... [Main Program](/chapter/bn0.pl6)
      - [goals](/chapter/text0.md#goals) - [methods](/chapter/text0.md#teaching-method) - [layout](/chapter/text0.md#chapter-layout) - [prerequisites](/chapter/text0.md#prerequisites)
-     - [Perl philosophy](/chapter/text0.md#perl-philosophy) - [basic syntax rules](/chapter/text0.md#basic-syntax-rules) - [first tiny example: hello math !](/chapter/text0.md#first-example)
+     - [Perl philosophy](/chapter/text0.md#perl-philosophy) - [basic syntax](/chapter/text0.md#basic-syntax-rules) - [tiny example](/chapter/text0.md#first-example) - [built app](/chapter/text0.md#what-app-to-build)
    + [Chapter 1](/chapter/text1.md) ..................... [Main Program](/chapter/bn1.pl6)
    + [Chapter 2](/chapter/text2.md) ..................... [Main Program](/chapter/bn2.pl6)
    + [Chapter 3](/chapter/text3.md) ..................... [Main Program](/chapter/bn3.pl6)

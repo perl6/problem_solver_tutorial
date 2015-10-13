@@ -1,4 +1,5 @@
 
+
 [Chapter 0](../table-of-content.md)
 ===================================
 
@@ -9,6 +10,7 @@
    * [Perl philosophy](#perl-philosophy)
    * [basic syntax rules](#basic-syntax-rules)
    * [first tiny example: hello math !](#first-example)
+   * [what app to build](#what-app-to-build)
 
 
 
@@ -103,22 +105,23 @@ and for reflection.
 -----------------------------
 
 The big banner of Perl was always TIMTOWDTI: There Is More Than One Way To Do It!
-This means that Larry Wall is smart enough to realize, that he is not smart enough
-to make all decisions for you in advance and that providing choice is a good thing.
-But good choices are based on lots of thought and/or experience.
-That means: you as a person and your views are taken seriously.
-You get treated as an adult. But sometimes you have to be an adult
-(programming wise) to use Perls enormous power wisely.
+This means that Larry Wall was smart enough to realize, that it is impossible to
+forsee all situations you may encounter. Therefore providing choice is a good thing.
+But good choices are based on lots of thought and/or experience. That means:
+your views are taken seriously. You get treated as an adult. But sometimes you
+have to mature (programming wise) to use Perls enormous power wisely.
 
-One way Perl 6 differs greatly from Perl 5: it supplies better training wheels.
-Meaning: the usual matters are straight forward. Even the second slogan was
-also always: "Keep easy stuff easy" - a lot of improvements were done in this field.
-On one hand in requiring less knowledge and fumbling for some common operations.
-On the other hand in delivering an outrageously unsuspicious syntax and keeping
-our perlish specialties as the other option in the backyard (TIMTOWTDI).
+One way Perl 6 differs greatly from Perl 5: it has better training wheels.
+Even the second slogan went already: "Keep the easy stuff easy" - a lot of
+improvements were done in this field. Every day matters require less knowledge
+and fumbling and the necessary commands are named very straight forward.
+Special cases were eliminated ruthlessly and replaced with recurring principles.
 
 However the full sentence goes: "Keep the easy stuff easy and hard possible."
-
+All the heavy weapons are still there and some new, more powerful ones.
+It includes full access to the internals to mold Perl 6 into whatever can imagine.
+As a safeguard many of these possibilities need some extra wording and a syntax,
+that is signaling its harmful potential.
 
 
 ----
@@ -126,7 +129,7 @@ However the full sentence goes: "Keep the easy stuff easy and hard possible."
 ----
 
 natural language
-
+waterbed
 
 
 [Basic Syntax Rules](#chapter-0)
@@ -137,6 +140,7 @@ semicolon
 braces
 
 
+
 [First Example](#chapter-0)
 --------------------------
 
@@ -145,6 +149,16 @@ not explaining details
 `use v6;`
  
 `say 'Result: ', EVAL prompt 'Your Math Question? ';`
+
+
+
+[What App To Build](#chapter-0)
+---------------------------
+
+useful
+textinfo age
+keep organized
+multi purpose
 
 
 
