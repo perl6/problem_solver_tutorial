@@ -105,35 +105,57 @@ and for reflection.
 -----------------------------
 
 The big banner of Perl was always TIMTOWDTI: There Is More Than One Way To Do It!
-This means that Larry Wall was smart enough to realize, that it is impossible to
-forsee all situations you may encounter. Therefore providing choice is a good thing.
+Larry Wall realized: it is impossible to forsee all situations you may encounter.
+Therefore providing overlapping choices how to solve your issue is a good thing.
 But good choices are based on lots of thought and/or experience. That means:
-your views are taken seriously. You get treated as an adult. But sometimes you
-have to mature (programming wise) to use Perls enormous power wisely.
+You get treated as an adult (your views are taken seriously) and you have to act
+as an adult (learn and consider consequences).
 
 One way Perl 6 differs greatly from Perl 5: it has better training wheels.
 Even the second slogan went already: "Keep the easy stuff easy" - a lot of
-improvements were done in this field. Every day matters require less knowledge
-and fumbling and the necessary commands are named very straight forward.
+improvements were done in this field. Every day matters require less fumbling
+and knowledge and the necessary commands are named very straight forward.
 Special cases were eliminated ruthlessly and replaced with recurring principles.
+You will get surprisingly far in Perl with a very limited subset of the language.
 
 However the full sentence goes: "Keep the easy stuff easy and hard possible."
 All the heavy weapons are still there and some new, more powerful ones.
-It includes full access to the internals to mold Perl 6 into whatever can imagine.
+It includes full access to many detail workings, including all the internals,
+allowing you to mold Perl 6 into whatever can imagine.
 As a safeguard many of these possibilities need some extra wording and a syntax,
 that is signaling its harmful potential.
 
+The hardest part of the second slogan is the word "and". Main challenge for the
+designers was it to create a language that is very supportive and forgiving to
+beginners and yet at the same time not dumbed down, but powerful and expressive.
+As we know from experience: pushing a dent into a waterbed, makes the water just
+bulge all other places. Analogous: if you forbid komplex commands, your program
+gets complex in different ways, if its the nature of the problem you try to solve.
+For instance: we could forbid power an multiplication and reduce "2 to the power 
+of 2" into 2 + 2. Nice and simple. But reducing "27 to the power of 9" into sums -
+you easily loose overview and get trapped in wearing and repetitive tasks.
+So it actually helps you to write easy to to understand code if you take your time,
+learning what power is.
 
-----
-   !!! from here on the text is in raw state !!!
-----
+The creator of Perl believe in the joy of experimenting and learning and that
+programming can be a vocation, a work of love which is only if fulfilling,
+if your free to follow you intuition and also the desire when to learn what.
 
-natural language
-waterbed
+Being a fusion of passion and logic - Perl 6 employs inwardly many principles
+and concepts from computer science. On the outside, however, it appears almost
+like a human language. It not only borrows many words from simple English like
+use, do, whenever, take ... and so forth, it also tries to get the use and feel
+of a natural language - allowing you to express yourself to the computer in the
+way you do the rest of the day.
+
 
 
 [Basic Syntax Rules](#chapter-0)
 --------------------------------
+
+----
+   !!! from here on the text is in raw state !!!
+----
 
 white space
 semicolon
