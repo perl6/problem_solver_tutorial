@@ -1,7 +1,7 @@
 #Perl 6 for problem solver
 
    + [Chapter 0](/chapter/text0.md) ..................... [Main Program](/chapter/bn0.pl6), [Selfprinter](/chapter/self0.pl6)
-     - [goals](/chapter/text0.md#goals) - [methods](/chapter/text0.md#teaching-method) - [layout](/chapter/text0.md#chapter-layout) - [built app](/chapter/text0.md#what-app-to-build) - [prerequisites](/chapter/text0.md#prerequisites)
+     - [goals](/chapter/text0.md#goals) - [methods](/chapter/text0.md#teaching-method) - [built app](/chapter/text0.md#what-app-to-build) - [layout](/chapter/text0.md#chapter-layout) - [prerequisites](/chapter/text0.md#prerequisites)
      - [Perl philosophy](/chapter/text0.md#perl-philosophy) - [basic syntax](/chapter/text0.md#basic-syntax-rules) - [first example](/chapter/text0.md#first-example)
    + [Chapter 1](/chapter/text1.md) ..................... [Main Program](/chapter/bn1.pl6)
      - scalars - quoting - tilde - shell IO - file IO - conditionals - comparison - exit
@@ -16,7 +16,7 @@
    + Chapter 10
    + Chapter 11
    + Chapter 12
-
+   
 
 
 

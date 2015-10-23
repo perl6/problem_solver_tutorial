@@ -5,8 +5,8 @@
 
 
    * [goals](#goals) and [methods](#teaching-method)
-   * [chapter layout](#chapter-layout)
    * [what app to build](#what-app-to-build)
+   * [chapter layout](#chapter-layout)
    * [prerequisites](#prerequisites)
    * [Perl philosophy](#perl-philosophy)
    * [basic syntax rules](#basic-syntax-rules)
@@ -21,10 +21,10 @@ Welcome,
 to this hands on tour through the more often needed parts of this vast and
 beautiful programming language. You can find here:
 
-   - syntax knowledge:
-   - bits of deeper understanding for the design decisions:
-   - room for own experiments:
-   - a hopefully useful application:
+   - syntax knowledge
+   - bits of deeper understanding for the design decisions
+   - room for own experiments
+   - a hopefully useful application
    - a taste of the full capabilities of Perl 6
    - sources for further learning (docs and more)
 
@@ -52,47 +52,52 @@ favorite learning style. Rereading a chapter after that also clarifies a lot.
 When an explanation still doesn't makes sense to you - please let us know via github.
 
 The flip side of this practical, yet dense approach: you (mostly) have to stick
-with the given order and won't be able to skip even several sentences.
-Because then you overlook the introduction of an important feature, which will be
-premised over and over. This is especially true during chapter 2-6 and an inevitable
+with the given order and won't be able to skip even several sentences without
+risking to miss the introduction of an important feature, which will be premised
+over and over. This is especially true during chapter 2-6 and an inevitable
 side effect of developing one example program throughout the whole tutorial.
 While we strongly recommend to adapt it to your wishes, you should be be aware,
-that maintaining them through all changes can be a demanding task.
-
-
-
-[Chapter Layout](#chapter-0)
---------------------------
-
-The practical needs of the growing application did sometimes overrule the
-educational intents of the author. Nonetheless there is a golden thread 
-and the menu (table of contents) as the index as well show where to find what.
-
-Every chapter has a main topic and several (mostly 6) (often related) subtopics.
-Together they allow to bring the program to a new stage, introducing a new
-feature set or a new style of programming. The source code in each stage is
-included (see table of content). Number in file names refer to a chapter.
-
-Each chapter has several paragraphs. They correspond to the subheadings in the table
-of content and covers only a single command, operator or another language feature. 
-Usually they have just the right length to be read in 5 to 10 minutes.
-After that the tutorial can be easily put aside - to practice the new knowledge
-or to leave the train. 
-
-Chapters are also optimized for reading them in one swoop. The first paragraph(s)
-are commonly an easy read - a warm up to get accustomed to the topic.
-The most challenging part is in the middle, while the end serves as a fade out
-and for reflection.
+that maintaining your modifications through the chapter can be a demanding task.
 
 
 
 [What App To Build](#chapter-0)
----------------------------
+-------------------------------
+What program could be valuable to many and highlights Perls strengths?
+
+----
+   !!! from here on the text is in raw state !!!
+----
 
 useful
 textinfo age
 keep organized
 multi purpose
+
+
+
+[Chapter Layout](#chapter-0)
+----------------------------
+
+The practical needs of the growing application shaped the content and ordering
+of the chapter, sometimes even overruling the educational intents of the author.
+Nonetheless there is a golden thread and the menu (table of contents) as the
+index show where to find what.
+
+Every chapter has a main topic and several (mostly 6), often related subtopics.
+Together they allow to bring the program to a new stage, introducing a new
+feature set or a new style of programming. The source code in each stage is
+included (see table of content). Numbers in file names refer to a chapter.
+
+Each chapter has several paragraphs. They correspond to the subheadings in the table
+of content and cover only a single command, operator or another language feature. 
+Usually they have just the right length to be read in 5 to 10 minutes.
+After that the tutorial can be easily put aside. 
+
+Chapters are also optimized for reading them in one swoop. The first paragraph(s)
+are commonly an easy read - a warm up to get accustomed to the topic.
+The most challenging part is iusually n the middle, while the end serves as a
+fade out and for recap.
 
 
 
@@ -162,15 +167,20 @@ way you do the rest of the day.
 
 [Basic Syntax Rules](#chapter-0)
 --------------------------------
+Mostly under Unix type operating systems like Linux, Irix, MaxOS and BSD you
+can call text files like binary programs.
 
+Every Perl 6 program starts 
 ----
    !!! from here on the text is in raw state !!!
 ----
+#!/path/to/perl6
 `use v6;`
-
-white space
+new line
 semicolon
+white space
 braces
+slashes
 
 
 
@@ -183,6 +193,7 @@ not explaining details
 `say 'Result: ', EVAL prompt 'Your Math Question? ';`
 
 `say slurp $?FILE;`
+
 
 [^chapter start^](#chapter-0)
 
