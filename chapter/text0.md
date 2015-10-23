@@ -6,11 +6,11 @@
 
    * [goals](#goals) and [methods](#teaching-method)
    * [chapter layout](#chapter-layout)
+   * [what app to build](#what-app-to-build)
    * [prerequisites](#prerequisites)
    * [Perl philosophy](#perl-philosophy)
    * [basic syntax rules](#basic-syntax-rules)
    * [first tiny example: hello math !](#first-example)
-   * [what app to build](#what-app-to-build)
 
 
 
@@ -66,7 +66,7 @@ that maintaining them through all changes can be a demanding task.
 
 The practical needs of the growing application did sometimes overrule the
 educational intents of the author. Nonetheless there is a golden thread 
-and the menu(table of contents) as the index as well show where to find what.
+and the menu (table of contents) as the index as well show where to find what.
 
 Every chapter has a main topic and several (mostly 6) (often related) subtopics.
 Together they allow to bring the program to a new stage, introducing a new
@@ -83,6 +83,16 @@ Chapters are also optimized for reading them in one swoop. The first paragraph(s
 are commonly an easy read - a warm up to get accustomed to the topic.
 The most challenging part is in the middle, while the end serves as a fade out
 and for reflection.
+
+
+
+[What App To Build](#chapter-0)
+---------------------------
+
+useful
+textinfo age
+keep organized
+multi purpose
 
 
 
@@ -171,16 +181,6 @@ not explaining details
 `use v6;`
  
 `say 'Result: ', EVAL prompt 'Your Math Question? ';`
-
-
-
-[What App To Build](#chapter-0)
----------------------------
-
-useful
-textinfo age
-keep organized
-multi purpose
 
 
 
