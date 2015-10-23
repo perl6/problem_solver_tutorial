@@ -1,8 +1,8 @@
 #Perl 6 for problem solver
 
    + [Chapter 0](/chapter/text0.md) ..................... [Main Program](/chapter/bn0.pl6)
-     - [goals](/chapter/text0.md#goals) - [methods](/chapter/text0.md#teaching-method) - [layout](/chapter/text0.md#chapter-layout) - [prerequisites](/chapter/text0.md#prerequisites)
-     - [Perl philosophy](/chapter/text0.md#perl-philosophy) - [basic syntax](/chapter/text0.md#basic-syntax-rules) - [tiny example](/chapter/text0.md#first-example) - [built app](/chapter/text0.md#what-app-to-build)
+     - [goals](/chapter/text0.md#goals) - [methods](/chapter/text0.md#teaching-method) - [layout](/chapter/text0.md#chapter-layout) - [built app](/chapter/text0.md#what-app-to-build) - [prerequisites](/chapter/text0.md#prerequisites)
+     - [Perl philosophy](/chapter/text0.md#perl-philosophy) - [basic syntax](/chapter/text0.md#basic-syntax-rules) - [first example](/chapter/text0.md#first-example)
    + [Chapter 1](/chapter/text1.md) ..................... [Main Program](/chapter/bn1.pl6)
    + [Chapter 2](/chapter/text2.md) ..................... [Main Program](/chapter/bn2.pl6)
    + [Chapter 3](/chapter/text3.md) ..................... [Main Program](/chapter/bn3.pl6)
