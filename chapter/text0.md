@@ -166,6 +166,7 @@ way you do the rest of the day.
 ----
    !!! from here on the text is in raw state !!!
 ----
+`use v6;`
 
 white space
 semicolon
@@ -178,11 +179,10 @@ braces
 
 not explaining details
 
-`use v6;`
  
 `say 'Result: ', EVAL prompt 'Your Math Question? ';`
 
-
+`say slurp $?FILE;`
 
 [^chapter start^](#chapter-0)
 
