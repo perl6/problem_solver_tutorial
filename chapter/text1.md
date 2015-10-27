@@ -5,12 +5,12 @@
 
 
    * [scalar variables](#scalar-variables)
-   * file IO: `slurp`, `spurt` and test op
-   * shell IO: `say`, `prompt`
-   * conditionals: `if`, `elsif`, `else`, as statement modifier too
-   * comparison ops (`>`, `eq`)
    * single ('') and double ("") quoting
-   * string context and  concatenation `~`
+   * string context and concatenation `~`
+   * shell IO: `say`, `prompt`
+   * file IO: `slurp`, `spurt` and test op
+   * conditionals: `if`, `elsif`, `else`, as statement modifier too
+   * comparison ops: `>`, `eq`
    * `exit` main program
 
    
