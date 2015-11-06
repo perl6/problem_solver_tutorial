@@ -109,9 +109,10 @@ fade out and for recap.
      What are variables or statements - things of that nature.
      Even computer science terms are used, they get introduced in common English.
      So a keen mind is whats really needed.
-   - any editor:
+   - Rakudo: just check http://rakudo.org/how-to-get-rakudo/
    - any shell:
      to run the scripts (unless you can do it from inside the editor)
+   - any editor but a P6 highlighing have:
    - an open browser connected to the net
 
 
