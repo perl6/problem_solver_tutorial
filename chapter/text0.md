@@ -63,7 +63,20 @@ that maintaining your modifications through the chapter can be a demanding task.
 
 [What App To Build](#chapter-0)
 -------------------------------
-What program could be valuable to many and highlights Perls strengths?
+What kind of program could be valuable to many and also highlights Perls strengths?
+I think a note manager! Yes there are plenty ones out there, but we can do a very
+versatile one, can serve as a todo-list or vocabulary trainer or plainly as a tool,
+that helps you not getting lost in information overflow.
+
+Sifting through all sort of data and especially text, building complex
+data structures with easy
+manages information you found interesting
+ that help you to 
+ - because information overload is an issue
+
+ does that. It might sound like a boring Yet another
+..., but organizing our stuff is something we all face as soon we have more than
+one 
 
 ----
    !!! from here on the text is in raw state !!!
